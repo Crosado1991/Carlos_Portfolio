@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Rosado Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/profile-pic.jpg" alt="Carlos Rosado" id="profile-pic">
+        <h1 id="portfolio-header">Carlos Rosado's Portfolio</h1>
+        <div id="description" style="display: none;">
+            <p>
+                I am a mostly self-taught software developer passionate about learning and growth. I have completed comprehensive courses on Udemy and freeCodeCamp where I have learned programming languages such as Python, JavaScript, Java, HTML, and CSS.
+                Practicing on platforms such as LeetCode and GitHub has honed my problem-solving skills and deepened my understanding of data structures and algorithms. I am pursuing a Bachelor's Degree in Computer Science, which has provided me with a 
+                strong foundation of theoretical knowledge alongside real-world experience. I have a solid grasp of computer science fundamentals, and my self-directed learning journey has equipped me with the agility and adaptability needed to thrive in 
+                dynamic tech environments. I am driven by a passion for innovation and a desire to contribute to cutting-edge projects. I am excited about the opportunity to collaborate with like-minded professionals and expand my skill set.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects-section">
+            <h2>Projects</h2>
+            <div id="projects-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contact Information</h2>
+        <p>
+            Phone: <a href="tel:5613967066">561-396-7066</a>
+        </p>
+        <p>
+            Email: <a href="mailto:carlosrosado2510@gmail.com">carlosrosado2510@gmail.com</a>
+        </p>
+    </footer>
+
+    <script src="projects.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        // Toggle description visibility
+        document.getElementById('portfolio-header').addEventListener('click', function() {
+            var description = document.getElementById('description');
+            if (description.style.display === 'none') {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
